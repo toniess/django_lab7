@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/articleAdd.css">
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-block">
+            <p class="header-title">Django public blog</p>
+        </div>
+    </header>
+
+    <div class="content back_rect">
+        <h1>Авторизация</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" class="input_title" placeholder="Логин" value="{{ form.username }}">
+            <input type="password" name="password" class="input_title" placeholder="Пароль" value="{{ form.password }}">
+            <input type="submit" class="save_button" value="Авторизоавться">
+        </form>
+
+    </div>
+    {{ form.errors }}
+</body>
+
+</html>

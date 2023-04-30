@@ -1,0 +1,161 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #1abc9c;
+   font-family: Roboto, 'Open Sans';
+   color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Header */
+
+header {
+   width: 80%;
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.new_post_block {
+   display: flex;
+   background-color: #12947a;
+   border-radius: 7px;
+   align-items: center;
+   justify-content: center;
+   height: 50%;
+   margin-right: 20px;
+}
+
+.add_post {
+   text-decoration: none;
+   padding: 7px;
+   color: #ffffff;
+}
+
+.welcome-block {
+   margin-right: 60px;
+}
+
+.header-text {
+   font-size: 22px;
+}
+
+
+.header_article {
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   margin-bottom: 20px;
+}
+
+.back_to_main {
+   color: #ffffff;
+   text-decoration: underline;
+   font-size: 20px;
+}
+
+.back_block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.header-block {
+   background-color: #12947a;
+   padding: 10px;
+   border-radius: 10px;
+   display: flex;
+}
+
+.header-title {
+   font-size: 30px;
+   text-shadow: 0px 7px 8px black;
+}
+
+.right-header-block {
+   display: flex;
+}
+
+
+
+/* archive */
+
+.archive {
+   display: flex;
+   flex-direction: column;
+
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+}
+
+
+
+.title-block {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.post-title {
+   color: #ffffff;
+
+}
+
+.article-info {
+   display: none;
+   justify-content: space-between;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-family: Roboto;
+}
+.one-post.folded .article-info {
+   display: flex;
+}
+.article-author {
+   font-size: 18px;
+   display: block;
+}
+.article-created-date {
+   font-size: 12px;
+   margin-right: 20px;
+   display: block;
+}
+.article-text {
+   display: none;
+}
+.one-post.folded .article-text {
+   display: block;
+}
+.fold-button {
+   border: none;
+   background-color: transparent;
+   color: #ffffff;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.logo {
+   width: 60px;
+   height: 60px;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+}
+
+.auto {
+   margin-right: 20px;
+}
